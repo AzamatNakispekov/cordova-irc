@@ -30,8 +30,8 @@
             <ul id="messages">
                 <template repeat="{{ messages }}">
                    <li>
-                       <b>{{ login }}</b>
-                       [{{ time }}] 
+                       <b>[{{ time }}]</b>
+                       |{{ login}}| 
                        {{ message }}</li>
                 </template>
             </ul>
@@ -47,47 +47,7 @@
                 // define element prototype here
                 login: 'Kant',
                 messages: [
-                    { 
-                        login: 'kant', 
-                        time: '19:00',
-                        message: 'Сообщение',
-                        type: 'text'
-                    },
-                    { 
-                        login: 'kant', 
-                        time: '18:00',
-                        message: 'Сообщение',
-                        type: 'text'
-                    },
-                    { 
-                        login: 'kant', 
-                        time: '17:00',
-                        message: 'Сообщение'
-                    },
-                    { 
-                        login: 'kant', 
-                        time: '16:00',
-                        message: 'Сообщение'
-                    },
-                    { 
-                        login: 'kant', 
-                        time: '19:00',
-                        message: 'Сообщение'
-                    },
-                    { 
-                        login: 'noname', 
-                        time: '19:00',
-                        message: 'Сообщение',
-                        type: 'audio',
-                        audioStream: '.....'
-                    },
-                    { 
-                        login: 'noname', 
-                        time: '19:00',
-                        message: 'Сообщение',
-                        type: 'image',
-                        imageUrl: 'http://'
-                    }
+               
                 ],
                 addMessage: function(login, time, message) {
                     var messageObject = { 
